@@ -20,6 +20,12 @@ alias url="git config --get remote.origin.url"
 # Get current logged in user's info on CLI
 alias gc="git config --list"
 
+# Delete the most recent commit, keeping the work you've done:
+alias rcs="git reset --soft HEAD~1"
+
+# Delete the most recent commit, destroying the work you've done:
+alias rch="git reset --hard HEAD~1"
+
 # The provided alias script sets up shortcuts for making HTTP requests using the lwp-request command from the libwww-perl library. Example Usage
 # After running this script, you can use the HTTP methods directly as commands in the terminal to make HTTP requests. For example:
 # GET http://example.com will run lwp-request -m 'GET' http://example.com
