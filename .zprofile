@@ -14,6 +14,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
 
+# Get the url of the git repo in the current folder, from command line
+alias url="git config --get remote.origin.url"
+
 # The provided alias script sets up shortcuts for making HTTP requests using the lwp-request command from the libwww-perl library. Example Usage
 # After running this script, you can use the HTTP methods directly as commands in the terminal to make HTTP requests. For example:
 # GET http://example.com will run lwp-request -m 'GET' http://example.com
